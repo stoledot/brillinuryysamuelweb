@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NODO Arquitectos</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Montserrat',sans-serif;
+background:#f5f3ef;
+color:#1b1b1b;
+overflow-x:hidden;
+}
+
+header{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+z-index:100;
+padding:30px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:1.4rem;
+font-weight:700;
+letter-spacing:4px;
+color:white;
+}
+
+nav{
+display:flex;
+gap:35px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-size:.95rem;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+opacity:.7;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(to right, rgba(0,0,0,.62), rgba(0,0,0,.28)),
+url('https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+padding:0 70px;
+}
+
+.hero-content{
+max-width:760px;
+color:white;
+}
+
+.hero small{
+letter-spacing:5px;
+font-size:.85rem;
+opacity:.85;
+}
+
+    .hero h1 {
+        font-size: clamp(2.2rem, 5vw, 6rem);
+        line-height: 1.02;
+        margin: 22px 0 28px;
+        font-weight: 700;
+    }
+
+.hero p{
+font-size:1.1rem;
+line-height:1.9;
+max-width:640px;
+opacity:.92;
+margin-bottom:38px;
+}
+
+.btn{
+display:inline-block;
+padding:17px 34px;
+background:white;
+color:black;
+text-decoration:none;
+font-weight:600;
+border-radius:100px;
+transition:.35s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.section{
+padding:110px 70px;
+max-width:1450px;
+margin:auto;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.section h2{
+font-size:3.2rem;
+margin-bottom:26px;
+line-height:1.1;
+}
+
+.section p{
+font-size:1.03rem;
+line-height:2;
+color:#444;
+margin-bottom:24px;
+}
+
+.image-large{
+width:100%;
+height:720px;
+object-fit:cover;
+border-radius:4px;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:26px;
+margin-top:60px;
+}
+
+.project{
+background:white;
+overflow:hidden;
+box-shadow:0 12px 35px rgba(0,0,0,.08);
+}
+
+.project img{
+width:100%;
+height:320px;
+object-fit:cover;
+}
+
+.project-content{
+padding:28px;
+}
+
+.project-content h3{
+font-size:1.45rem;
+margin-bottom:12px;
+}
+
+.project-content span{
+display:block;
+margin-bottom:18px;
+color:#777;
+font-size:.9rem;
+letter-spacing:2px;
+}
+
+.band{
+background:#161616;
+padding:120px 40px;
+text-align:center;
+color:white;
+}
+
+.band h2{
+font-size:3.8rem;
+max-width:950px;
+margin:auto;
+line-height:1.15;
+margin-bottom:28px;
+}
+
+.band p{
+max-width:760px;
+margin:auto;
+line-height:1.9;
+opacity:.85;
+margin-bottom:40px;
+}
+
+footer{
+padding:50px;
+text-align:center;
+background:#0f0f0f;
+color:#9f9f9f;
+}
+
+@media(max-width:1000px){
+
+.hero{
+padding:0 30px;
+}
+
+.hero h1{
+font-size:2rem;
+}
+
+.section{
+padding:90px 30px;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.image-large{
+height:480px;
+}
+
+header{
+padding:25px 25px;
+}
+
+nav{
+display:none;
+}
+
+.band h2{
+font-size:2.4rem;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+<div class="logo">NODO</div>
+
+<nav>
+<a href="#">Inicio</a>
+<a href="#">Proyectos</a>
+<a href="#">Residencial</a>
+<a href="#">Estudio</a>
+<a href="#">Contacto</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<small>ARQUITECTURA CONTEMPORÁNEA</small>
+
+<h1>Espacios sobrios, modernos y atemporales.</h1>
+
+<p>
+Diseñamos arquitectura premium enfocada en luz, proporción y experiencia humana. Creamos residencias y espacios comerciales con identidad elegante y funcional.
+</p>
+
+<a href="#" class="btn">Ver proyectos</a>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="grid">
+
+<div>
+
+<h2>Arquitectura con presencia visual poderosa.</h2>
+
+<p>
+Cada proyecto es concebido para transmitir amplitud, sofisticación y armonía. Nuestro enfoque combina estética contemporánea con funcionalidad real para la vida cotidiana.
+</p>
+
+<p>
+Trabajamos con materiales honestos, iluminación natural y composiciones limpias que generan espacios memorables.
+</p>
+
+<a href="#" class="btn">Conocer el estudio</a>
+
+</div>
+
+<div>
+<img class="image-large" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1400&auto=format&fit=crop">
+</div>
+
+</div>
+
+<div class="projects">
+
+<div class="project">
+
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1400&auto=format&fit=crop">
+
+<div class="project-content">
+
+<span>RESIDENCIAL</span>
+
+<h3>Casa Roble</h3>
+
+<p>
+Diseño minimalista con integración natural y dobles alturas iluminadas.
+</p>
+
+</div>
+
+</div>
+
+<div class="project">
+
+<img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1400&auto=format&fit=crop">
+
+<div class="project-content">
+
+<span>COMERCIAL</span>
+
+<h3>Terra Business Lounge</h3>
+
+<p>
+Espacio ejecutivo premium con acabados sobrios y arquitectura elegante.
+</p>
+
+</div>
+
+</div>
+
+<div class="project">
+
+<img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?q=80&w=1400&auto=format&fit=crop">
+
+<div class="project-content">
+
+<span>INTERIORISMO</span>
+
+<h3>Studio Piedra</h3>
+
+<p>
+Interiorismo contemporáneo enfocado en textura, iluminación y confort.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="band">
+
+<h2>
+La arquitectura correcta puede elevar por completo la percepción de una marca o residencia.
+</h2>
+
+<p>
+Creamos espacios que comunican exclusividad, orden y permanencia. Porque el diseño no solo se ve: también se siente.
+</p>
+
+<a href="#" class="btn">Solicitar propuesta</a>
+
+</section>
+
+<footer>
+© 2026 NODO Arquitectos — Diseño Arquitectónico Contemporáneo
+</footer>
+
+</body>
+</html>
