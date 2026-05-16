@@ -553,3 +553,44 @@ footer {
         color: var(--muted);
         font-size: 0.98rem;
     }
+
+.mockup-iphone {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+}
+
+.iphone {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+/* Pantalla dentro de la laptop */
+.screen-iphone {
+    position: absolute;
+    /* AJUSTA ESTOS VALORES */
+
+    top: 3%;
+    left: 16%;
+    width: 73%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+@media (max-width: 768px) {
+
+    .mockup-iphone {
+        max-width: 100%;
+    }
+}
+
+
+.container-mokups{
+    max-width: 700px;
+    max-height: 700px;
+}
