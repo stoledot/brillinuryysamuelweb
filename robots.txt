@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://stoledot.github.io/brillinuryysamuelweb/sitemap.xml
